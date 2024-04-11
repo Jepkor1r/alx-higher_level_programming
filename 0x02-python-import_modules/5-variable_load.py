@@ -3,5 +3,5 @@
 from variable_load_5 import a
 print(a)
 
-if __name != "__main__":
+if __name__ != "__main__":
     raise ImportError("This module cannot be directly imported")

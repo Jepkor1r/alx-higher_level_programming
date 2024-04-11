@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-""" import add function
-from add_0 python file
-"""
 from add_0 import add
 
 a = 1

@@ -8,4 +8,4 @@ for i in range(9):
             print("{}".format(i), end='')
             print("{}, ".format(j), end='')
         else:
-            print("{}{}{}".format(i, j, "\n"))
+            print("{}{}".format(i, j))

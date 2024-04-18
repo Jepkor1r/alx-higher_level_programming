@@ -6,4 +6,5 @@ def print_last_digit(number):
         number - parameter value to be checked
 	Return - value of last digit
     """
-    return number % 10
+    lastDigit = number / 10    
+    return lastDigit

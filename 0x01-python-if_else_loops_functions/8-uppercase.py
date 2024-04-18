@@ -5,6 +5,8 @@ def uppercase(str):
        uppercase() - prints a string in uppercase
        str - parameter passed
     """
-    for i in range(ord('A'), ord('Z')):
-        print("{}".format(i))
+    for str in range(ord('A'), ord('Z')):
+        print("{}".format(str))
         print("{}".format("\n"))
+
+uppercase(str)

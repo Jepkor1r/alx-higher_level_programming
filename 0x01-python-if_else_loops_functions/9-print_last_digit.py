@@ -8,4 +8,5 @@ def print_last_digit(number):
     """
     lastDigit = number % 10
     print(lastDigit)
-    return lastDigit, lastDigit
+    twiceLastDigit = lastDigit + lastDigit
+    return twiceLastDigit

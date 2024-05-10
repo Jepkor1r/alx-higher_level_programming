@@ -7,3 +7,4 @@ def uppercase(str):
     """
     for i in str:
             print("{}".format(chr(ord(i) - 32)) if ord('a') <= ord(i) <= ord('z') else "{}".format(i), end="")
+    print()

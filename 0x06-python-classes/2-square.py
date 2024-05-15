@@ -27,7 +27,7 @@ class Square:
                 self: self initializing instance attribute
                 size: instance attribute
             """
-            self.size = size
+            self.__size = size
     except TypeError:
         print("size must be an integer")
     except ValueError:

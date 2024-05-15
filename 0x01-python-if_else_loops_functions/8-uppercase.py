@@ -8,7 +8,9 @@ def uppercase(str):
     for i, letter in enumerate(str):
         x = ord(letter)
         print(
-            "{}".format(chr(x - 32))
+            "{}\n".format(" ")
+            if len(str) == 0
+	    else "{}".format(chr(x - 32))
             if ord('a') <= x <= ord('z')
             else "{}".format(letter), end="\n"
             if i == len(str) - 1 or len(str) == 0 else "")

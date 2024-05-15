@@ -11,4 +11,4 @@ def uppercase(str):
             "{}".format(chr(x - 32))
             if ord('a') <= x <= ord('z')
             else "{}".format(letter), end="\n"
-            if i == len(str) - 1 else "")
+            if i == len(str) - 1 or len(str) == 0 else "")

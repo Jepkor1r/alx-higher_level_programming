@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Class Square: empty class
 init: stands for initialization method

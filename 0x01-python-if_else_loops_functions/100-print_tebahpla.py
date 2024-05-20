@@ -1,6 +1,4 @@
 #!/usr/bin/python3
 
-x = 122
-for i in range(x, 63, -1):
-    print("{}".format(i) if i <= 97 else i = x - 32 "{}".format(i), end='')
-	
+for i in range(ord('z'), ord('a') - 1, -1):
+    print("{}".format(chr(i)) if i % 2 == 0 else chr(i - 32), end='')

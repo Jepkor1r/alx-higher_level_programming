@@ -6,5 +6,8 @@ def remove_char_at(str, n):
     str - the string to be checked
     n - the position of the character in string to be removed
     """
-    if len(str) < n >= 0:
-        print("{} + {}".format(str[:n], str[n+1:]))
+    for i in str:
+        if n
+            print("{}".format(i), end="")
+
+remove_char_at("best", 3)

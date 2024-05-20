@@ -6,6 +6,6 @@ def print_last_digit(number):
         number - parameter value to be checked
 	Return - value of last digit
     """
-    lastDigit = number % 10
-    print(lastDigit)
-    return print(lastDigit)
+    for num in number:
+        if num == number[-1]:
+            print("{}".format(num), end="")

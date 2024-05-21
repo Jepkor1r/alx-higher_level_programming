@@ -1,0 +1,13 @@
+-- Create a table if it does not exist
+-- Add multiple rows to the table
+CREATE TABLE IF NOT EXISTS second_table(
+   id INT,
+   name VARCHAR(256),
+   score INT
+   );
+INSERT INTO 
+   second_table(id, name, score)
+   VALUES(1, "John", 10)
+   VALUES(2, "Alex", 3)
+   VALUES(3, "Bob", 10)
+   VALUES(4, "George", 8)

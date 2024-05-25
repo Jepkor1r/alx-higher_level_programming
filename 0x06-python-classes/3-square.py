@@ -5,6 +5,8 @@ init: stands for initialization method
 self: instance attribute
 __size: private instance attribute
 """
+
+
 class Square():
     """
         Square: an empty class
@@ -25,7 +27,7 @@ class Square():
     def area(self):
         """
             area: used to calculate the area of squared size
-	    return : area of a squared size
+            return : area of a squared size
         """
-        return self.__size **2
-        return area(self.__size **2)
+        return self.__size ** 2
+        return area(self.__size ** 2)

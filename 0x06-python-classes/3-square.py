@@ -5,9 +5,7 @@ init: stands for initialization method
 self: instance attribute
 __size: private instance attribute
 """
-
-
-class Square:
+class Square():
     """
         Square: an empty class
         It defines a class
@@ -23,3 +21,11 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
+
+    def area(self):
+        """
+            area: used to calculate the area of squared size
+	    return : area of a squared size
+        """
+        return self.__size **2
+        return area(self.__size **2)

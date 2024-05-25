@@ -12,23 +12,14 @@ class Square:
         Square: an empty class
         It defines a class
     """
-    def __init__(self, __size):
+    def __init__(self, size=0):
         """
-            init: used to initialize a instance
+            init: used to initialize an instance
             self: self initializing instance attribute
-            __size: private instance attribute
+            size: instance attribute
         """
-        self.__size = __size
-
-    try:
-        def __init__(self, size=0):
-            """
-                init: used to initialize an instance
-                self: self initializing instance attribute
-                size: instance attribute
-            """
-            self.__size = size
-    except TypeError:
-        print("size must be an integer")
-    except ValueError:
-        print("size must be >= 0")
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0") 
+        self.__size = size

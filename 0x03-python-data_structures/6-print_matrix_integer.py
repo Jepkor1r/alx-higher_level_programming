@@ -2,4 +2,6 @@
 
 def print_matrix_integer(matrix=[[]]):
     for i in matrix:
-            print("{:d}".format(num) for num in i)
+        for num in i:
+            print("{:d}".format(num),end="" if num != i[-1] else "")
+        print()

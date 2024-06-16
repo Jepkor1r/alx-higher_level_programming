@@ -11,16 +11,15 @@ if __name__ == "__main__":
     a = int(sys.argv[1])
     operator = sys.argv[2]
     b = int(sys.argv[3])
-    result = a + b
 
     if operator == '+':
-        print("{} {} {} = {}".format(a, operator, b, result))
+        print("{} {} {} = {}".format(a, operator, b, a + b))
     elif operator == '-':
-        print("{} {} {} = {}".format(a, operator, b, result))
+        print("{} {} {} = {}".format(a, operator, b, a - b))
     elif operator == '*':
-        print("{} {} {} = {}".format(a, operator, b, result))
+        print("{} {} {} = {}".format(a, operator, b, a * b))
     elif operator == '/':
-        print("{} {} {} = {}".format(a, operator, b, result))
+        print("{} {} {} = {}".format(a, operator, b, a / b))
     else:
         print("Unknown operator. Available operators: +, -, * and / ")
         sys.exit(1)

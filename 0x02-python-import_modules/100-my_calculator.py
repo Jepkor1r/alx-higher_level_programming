@@ -19,7 +19,7 @@ if __name__ == "__main__":
     elif operator == '*':
         print("{} {} {} = {}".format(a, operator, b, a * b))
     elif operator == '/':
-        print("{} {} {} = {}".format(a, operator, b, a / b))
+        print("{} {} {} = {}".format(a, operator, b, int(a / b)))
     else:
         print("Unknown operator. Available operators: +, -, * and / ")
         sys.exit(1)

@@ -2,7 +2,7 @@
 const argsNum = process.argv[2];
 
 if (argsNum === undefined) {
-    console.log('No argument');
+  console.log('No argument');
 } else {
-    console.log(argsNum);
+  console.log(argsNum);
 }

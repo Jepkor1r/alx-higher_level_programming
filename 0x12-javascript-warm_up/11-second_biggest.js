@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const num = process.argv.slice(2);
-function SecondBiggest (array) {
+function secondBiggest (array) {
   if (array.length < 2) {
     return 0;
   } else {

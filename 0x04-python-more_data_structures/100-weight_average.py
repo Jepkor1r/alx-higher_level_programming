@@ -9,5 +9,6 @@ def weight_average(my_list=[]):
         mul = row[0] * row[1]
         score += mul
         weight += row[1]
-        average = score / weight
+    # calculate average in an efficient snd clean way
+    average = score / weight
     return average

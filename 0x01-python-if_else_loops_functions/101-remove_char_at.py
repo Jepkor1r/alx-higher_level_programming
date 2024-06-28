@@ -6,7 +6,7 @@ def remove_char_at(str, n):
     str - the string to be checked
     n - the position of the character in string to be removed
     """
-    if n > len(str):
+    if n > len(str) or n < 0:
         return str
     new_string = ""
     for i in str:

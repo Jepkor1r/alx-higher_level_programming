@@ -4,8 +4,8 @@ def print_last_digit(number):
     """
         print_last_digit - prints the last digit of number
         number - parameter value to be checked
-	Return - value of last digit
+        Return - value of last digit
     """
-    for num in number:
-        if num == number[-1]:
-            print("{}".format(num), end="")
+    last_digit = abs(number) % 10
+    print("{}".format(last_digit), end="")
+    return last_digit

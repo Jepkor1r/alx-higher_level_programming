@@ -47,9 +47,9 @@ class Square():
     @position.setter
     def position(self, value):
         self.__position = value
-        if not (isinstance(value, tuple) and len(value) == 2 and position > 0):
+        if not (isinstance(value, tuple) and len(value) != 2 and position > 0):
             raise TypeError("position must be a tuple of 2 positive integers")
-    
+
     def area(self):
         """
             area: used to calculate the area of squared size
@@ -69,4 +69,4 @@ class Square():
                 print()
             for i in range(self.__size):
                 print(" " * self.__position[0], end="")
-                print("#" * self.__size) 
+                print("#" * self.__size)

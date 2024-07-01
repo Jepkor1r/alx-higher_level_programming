@@ -17,4 +17,3 @@ class LockedClass:
         leading to a more efficient and predictable classes
     """
     __slots__ = ['first_name']
-

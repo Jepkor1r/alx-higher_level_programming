@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 """
-    This module divide a matrix
+    This module divides all elements of a matrix
     matrix_divided: is the function
-    args: matrix, div
-    returns: new_matrix
-    raises: TypeError and ZeroDivisionError
+    Args: matrix, div
+    Returns: new_matrix with all elements divided by div,
+    roundedto 2 dp
+    Raises:
+        TypeError
+        ZeroDivisionError
 """
 
 

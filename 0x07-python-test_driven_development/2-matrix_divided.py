@@ -7,26 +7,31 @@
     raises: TypeError and ZeroDivisionError
 """
 
+
 def matrix_divided(matrix, div):
     """
         Divides all elements of a matrix.
-	Args:
+        Args:
             matrix: must be a list of lists of integers/floats
             div: divisor, must be integer/float
         Returns:
-            new matrix with all elements divided by div, rounded to 2 decimal places
+            new matrix with all elements divided by div,
+            rounded to 2 decimal places
         Raises:
             TypeError: if matrix is not a list of lists of integers/floats
                        if rows of matrix are not of the same size
                        if div is not a number
             ZeroDivisionError: if div is zero
     """
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in  matrix):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if not isinstance(matrix, list)
+    or not all(isinstance(row, list) for row in matrix):
+        raise TypeError
+        ("matrix must be a matrix (list of lists) of integers/floats")
     row_length = len(matrix[0])
     for row in matrix:
         if not all(isinstance(i, (int, float)) for i in row):
-            raise TypeError("matrix must be a matrix(list of lists) of integers/floats")
+            raise TypeError
+            ("matrix must be a matrix (list of lists) of integers/floats")
         if len(row) != row_length:
             raise TypeError("Each row of the matrix must have the same size")
     if not isinstance(div, (int, float)):

@@ -7,8 +7,10 @@
     Raises:
         TypeError: size must be integer
         ValueError: if size is less than 0
-	Typerror: if size is a float and is less than 0
+        Typerror: if size is a float and is less than 0
 """
+
+
 def print_square(size):
     """
         It prints a square with the character #

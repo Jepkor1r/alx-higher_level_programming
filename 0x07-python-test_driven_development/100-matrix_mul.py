@@ -38,7 +38,7 @@ def matrix_mul(m_a, m_b):
 
     for row in m_a:
         if len(row) != len(m_a[0]):
-            raise TypeError("each row of m_a must be of the same ")
+            raise TypeError("each row of m_a must be of the same size")
     for row in m_b:
         if len(row) != len(m_b[0]):
             raise TypeError("each row of m_b must be of the same size")
@@ -67,5 +67,5 @@ def matrix_mul(m_a, m_b):
                 sum += row[k] * m_b[k][j]
             new_row.append(sum)
         new_matrix.append(new_row)
-    
+
     return new_matrix

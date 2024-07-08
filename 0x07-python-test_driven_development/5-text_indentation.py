@@ -35,5 +35,5 @@ def text_indentation(text):
         else:
             if char != " " or not erase_spaces:
                 result += char
-                erase_spaces = False
+            erase_spaces = False
     print(result.lstrip())

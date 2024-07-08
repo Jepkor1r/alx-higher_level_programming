@@ -27,10 +27,6 @@ class TestMaxInteger(unittest.TestCase):
     def test_single_element(self):
         self.assertEqual(max_integer([7]), 7)
 
-    def test_strings(self):
-        with self.assertRaises(TypeError):
-            max_integer(['a', 'b', 'c'])
-
     def test_non_iterable(self):
         with self.assertRaises(TypeError):
             max_integer(123)

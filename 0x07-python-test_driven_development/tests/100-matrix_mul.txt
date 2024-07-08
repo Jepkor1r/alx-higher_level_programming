@@ -130,4 +130,17 @@ Traceback (most recent call last):
     ....
 ValueError: m_a and m_b can't be multiplied
 
+# Invalid input: missing two required positional arguments
+>>> matrix_mul()
+Traceback (most recent call last):
+    ...
+TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+
+# Invalid input: missing one required positional arguments
+>>> m_a = [[1, 2, 3], [3, 4, 5]]
+>>> matrix_mul(m_a)
+Traceback (most recent call last):
+    ...
+TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
 # run test case file with `python3 -m doctest -v ./tests/100-matrix_mul.txt`

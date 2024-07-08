@@ -25,14 +25,15 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    characters = [".", "?", ":"]
-    result = ""
-    i = 0
+    result = " "
+    erase_spaces = True
 
-    while i < len(text):
-        result += text[i]
-        if text[i] in characters:
-            result = result.strip()
-            result += "\n\n"
-        i += 1
+    for char in text:
+        if char in ".?:":
+            result += char + "\n\n"
+            erase_spaces = True
+        else:
+            if char != " " or not erase_spaces:
+                result += char
+            erase_spaces = False
     print(result.strip())

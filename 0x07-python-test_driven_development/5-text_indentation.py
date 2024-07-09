@@ -37,6 +37,6 @@ def text_indentation(text):
                 result += char
             erase_spaces = False
 
-    if result.endswith("/n/n"):
+    if result.endswith("\n\n"):
         result = result[:-2]
     print(result.lstrip())

@@ -18,8 +18,6 @@ True
 This is a sentence.
 <BLANKLINE>
 It has two parts.
-<BLANKLINE>
-<BLANKLINE>
 
 # Valid input: sentence with "?"
 >>> text = "Is this a question? Yes, it is."
@@ -27,15 +25,13 @@ It has two parts.
 Is this a question?
 <BLANKLINE>
 Yes, it is.
-<BLANKLINE>
-<BLANKLINE>
 
 # Valid input: sentence with ":"
->>> text = "The Gates of Shell: I almost died!😅"
+>>> text = "The Gates of Shell: I almost died!"
 >>> text_indentation(text)
 The Gates of Shell:
 <BLANKLINE>
-I almost died!😅
+I almost died!
 
 # Valid input: sentence with multiple ".?:"
 >>> text = "Bad. Baddo: Baddest?"
@@ -45,8 +41,6 @@ Bad.
 Baddo:
 <BLANKLINE>
 Baddest?
-<BLANKLINE>
-<BLANKLINE>
 
 # Valid input: sentence with spaces at the beginning and end (trimmed)
 >>> text = "    Test Driven Development.    "

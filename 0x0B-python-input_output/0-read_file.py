@@ -4,6 +4,8 @@
     This module reads a text file and prints it to stdout
 
 """
+
+
 def read_file(filename=""):
     """
         Function that reads a text file and prints it to stdout
@@ -13,5 +15,5 @@ def read_file(filename=""):
         Prints: the filename
     """
     with open(filename, encoding="UTF-8") as f:
-        content  = f.read()
+        content = f.read()
     print(content, end='')

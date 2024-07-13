@@ -6,6 +6,7 @@
 
 """
 
+
 def write_file(filename="", text=""):
     """
         This function writes a string to a text file (UTF8)
